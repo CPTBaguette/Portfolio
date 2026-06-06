@@ -10,15 +10,19 @@
     <script src="https://unpkg.com/i18next/i18next.js"></script>
     <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.js"></script>
     <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+    
 
 
     <title>Portfolio Data Analyst</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/styles.css">
 
-    <link rel="stylesheet" href="style.css">
+    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
 
     <header class="header" id="header">
@@ -26,19 +30,19 @@
         <h2 id="LEROOOOOOOOY" class="LEROOOOOOOOY">Jonathan Martin</h2>
 
         <ul>
-            <li><button onclick="i18next.changeLanguage('en')">testAnglais</button></li>
-             <li><button onclick="i18next.changeLanguage('fr')">testFR</button></li>
-            <li><a id="top1" href="#top">Moi</a></li>
-            <li><a id="top2" href="#comp">Compétences</a></li>
-            <li><a id="top3" href="#Portfolio">Portfolio</a></li>
-            <li><a id="top4" href="#form">Parcours</a></li>
-            <li><a id="top5" href="#Contact">Contact</a></li>
+            <li><img class="drapeau" src="MURICA.jpg" onclick="i18next.changeLanguage('en')"/></li>
+             <li><img class="drapeau" src="Frenchie.avif" onclick="i18next.changeLanguage('fr')"/></li>
+            <li><a class="topA Important" id="top1" href="#top">A propos de moi</a></li>
+            <li><a class="topA" id="top2" href="#comp">Compétences</a></li>
+            <li><a class="topA" id="top3" href="#Portfolio">Portfolio</a></li>
+            <li><a class="topA" id="top4" href="#form">Parcours</a></li>
+            <li><a class="topA" id="top5" href="#Contact">Contact</a></li>
         </ul>
 
     </header>
 
 
-    <div id="top" class="deb flex">
+    <div id="top" class="deb flex mx-auto">
         
         <div class="stars"></div>
         <div class="shooting-star"></div>
@@ -46,15 +50,18 @@
         <div class="shooting-star"></div>
         <div class="shooting-star"></div>
         <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
         
         <div class="divTop">
-            <img class="ImgMain" src="6778.jpg">
+            <img class="ImgMain" src="Moi.jpg">
             <h1 class="mx-auto">Jonathan Martin</h1>
-            <p id="student" class="mx-auto">Etudiant en informatique de 1ère année</p>
+            <p id="student" class="mx-auto">Etudiant en informatique de première année</p>
             <div class="social_wrapper">
                 <div class="social"><a href="https://github.com/CPTBaguette"><img src="GHUB.png"></a></div>
                 <div class="social"><a href="mailto:jonathan.martin@etu.univ-nantes.fr"><img src="GMAIL.png"></a></div>
-                <div class="social"><a href="https://discordapp.com/users/301478741941420032"><img src="DISCORD.png"></a></div>
+                <div class="social"><a href="https://discordapp.com/users/301478741941420032"><img src="dc.png"></a></div>
                 <div class="social"><a href="https://www.instagram.com/vilmur_?igsh=d2J5MHBrMno3MTA5"><img src="INSTA.webp"></a></div>
             </div>
         </div>
@@ -63,8 +70,8 @@
 
     </div>
 
-<div id="wrapper" class="w-3/4 mx-auto">
-    <section id="test" class="moi items-center" data-aos="fade-up"
+<div id="wrapper" class="mx-auto">
+    <section id="test" class="moi items-center mx-auto" data-aos="fade-up"
     data-aos-offset="-200"
     data-aos-delay="25"
     data-aos-duration="800"
@@ -98,7 +105,7 @@
     </section>
 
 
-    <section id="comp" class="mesComp" data-aos="fade-right"
+    <section id="comp" class="mesComp mx-auto" data-aos="fade-right"
     data-aos-offset="-400"
     data-aos-delay="25"
     data-aos-duration="400"
@@ -162,7 +169,7 @@
     </section>
 
 
-    <section id="Portfolio" class="Portf" data-aos="fade-up"
+    <section id="Portfolio" class="Portf mx-auto" data-aos="fade-up"
     data-aos-offset="-300"
     data-aos-delay="25"
     data-aos-duration="400"
@@ -277,7 +284,7 @@
 </section>
 
 
-    <section id="form" class="form" data-aos="fade-down"
+    <section id="form" class="form mx-auto" data-aos="fade-down"
     data-aos-offset="-250"
     data-aos-offset="25"
     data-aos-delay="25"
@@ -286,16 +293,21 @@
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center" >
-        <h2 id="formt" class="real">Parcours</h2>
-        <img src="1.png" class="block mx-auto w-10/10 min-h-[300px] rounded-xl " alt="Formation">
+        <h2 id="formt" class="real mx-auto">Parcours</h2>
+        <img id="formI" src="Cap.png" class="block mx-auto rounded-xl " alt="Formation">
+        
+<img>
+
+
+
     </section>
+    
 
-
-    <section id="Contact" class="doc" >
+    <section id="Contact" class="doc mx-auto" >
         <h2>Contacts</h2>
-        <div class="docC mx-auto w-2/3 min-h-[300px] rounded-xl shadow-lg">
+        <div class="docC mx-auto rounded-xl shadow-lg">
             <p id="CV" class="textJ">Consultez mon Curriculum Vitae</p>
-            <a id="DL" href="./Screen.png" download class=" FB inline-flex items-center justify-center bg-blue-500 text-white px-6 py-3 w-1/6 rounded-xl shadow-lg hover:bg-gray-800 transition">Télécharer</a>
+            <a id="DL" href="./SuperCVTropBienDeJonathan.pdf" download class=" FB inline-flex items-center justify-center bg-blue-500 text-white px-6 py-3 w-1/6 rounded-xl shadow-lg hover:bg-gray-800 transition">Télécharer</a>
             <p id="TJ" class="textJ">Retrouvez mes autres contacts en haut de la page !</p>
         </div>
     </section>
@@ -322,6 +334,8 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init()</script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 
 </body>
 

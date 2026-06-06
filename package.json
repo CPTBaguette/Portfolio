@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+    "build-css": "npx @tailwindcss/cli -i styles.css -o public/styles.css"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.3.0",
     "aos": "^2.3.4",
+    "flowbite": "^4.0.2",
     "i18next": "^26.3.1",
     "tailwindcss": "^4.3.0"
   }

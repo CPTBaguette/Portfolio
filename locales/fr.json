@@ -1,17 +1,17 @@
 {
-    "top1": "Moi",
+    "top1": "A propos de moi",
     "top2": "Compétences",
     "top3": "Portfolio",
     "top4": "Parcours",
     "top5": "Contact",
-    "student": "Etudiant en informatique de 1<sup>ère</sup> année",
+    "student": "Etudiant en informatique de première année",
     "test1": "Laissez moi me présenter",
     "test2": "Moi c'est Jonathan, je suis actuellement en première année de la formation Peip D à Nantes. Passionné par l'informatique depuis très jeune j'ai eu l'occasion de m'essayer à plusieurs technologies. Commençant par développer des jeux vidéos sur Unity en C# j'ai rapidement montré de l'intêret pour les langages de programmation orientés objets. Au fil de mon parcours, j'ai eu la chance de découvrir la science des données qui est le domaine dans lequel j'envisage aujourd'hui de faire carrière. Que ca soit à travers des analyses simples via pandas et matplotlib à l'expérimentation avec Pytorch, je ne cesse d'être intrigué par cette science.",
     "comp1":"Je me distingue en étant",
     "comp21":"Plein d'énergie",
     "comp22":"Que ce soit pour me lancer dans de nouveaux projets ou faire face à de nouveaux challenges, je suis toujours plein d'énergie !",
     "comp31":"Passionné et motivé",
-    "comp32":"Passionné d'informatique, je suis prêt à me donner a fond pour mener mes projets à bien.",
+    "comp32":"Passionné d'informatique, je suis prêt à me donner à fond pour mener mes projets à bien.",
     "comp41":"Polyvalent",
     "comp42":"Quelque soit la technologie je saurai me montrer utile et apprendre si nécessaire !",
     "Port1":"Mes projets",
@@ -37,11 +37,12 @@
     "Card5T":"Projet : analyse de stratégies boursières et comparaison avec l'investissement",
     "Card5Tex":"Ce projet orienté statistiques et données avait pour objectif de comparer des stratégies de trading risqués avec un investissement unique sur ETF. Le but était d'apprendre avec un exemple concret l'utilisation de graphes et des DataFrame de pandas",
     "formt":"Parcours",
-    "CV":"Consultez on Curriculum Vitae",
+    "CV":"Consultez mon Curriculum Vitae",
     "DL": "Télécharger",
     "TJ": "Retrouvez mes autres contacts en haut de la page !",
-    "fot": "Merci d'avoir jeté un œil à mon portfolio ☺",
+    "fot": "Merci d'avoir pris le temps de consulter mon portfolio ☺",
     "end": "Mon mail est disponnible plus haut si vous avez des questions !",
-    "closeModal": "Fermer"
+    "closeModal": "Fermer",
+    "formI": "FRSIN.png"
 }
 

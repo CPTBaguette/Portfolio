@@ -1,11 +1,13 @@
 
 
 
+
 const modal = document.getElementById("modal");
 const title = document.getElementById("modal-title");
 const text = document.getElementById("modal-text");
 const image = document.getElementById("modal-Image");
 const video = document.getElementById("modal-video");
+var displaying = false;
 
 
 i18next
@@ -97,7 +99,12 @@ function updateContent() {
     document.getElementById('fot').innerHTML = i18next.t('fot');
     document.getElementById('end').innerHTML = i18next.t('end');
     document.getElementById('closeModal').innerHTML = i18next.t('closeModal');
+    document.getElementById('formI').src = i18next.t('formI');
+
+    Display();
+    
 }
+
 
 function changeLng(lng) {
   i18next.changeLanguage(lng);
@@ -130,6 +137,18 @@ const header = document.getElementById("header");
 
 window.addEventListener("scroll", () => {
 
+let top1 = document.getElementById("top");
+let top2 = document.getElementById("comp");
+let top3 = document.getElementById("Portfolio");
+let top4 = document.getElementById("form");
+let top5 = document.getElementById("Contact");
+
+let he1 = document.getElementById("top1");
+let he2 = document.getElementById("top2");
+let he3 = document.getElementById("top3");
+let he4 = document.getElementById("top4");
+let he5 = document.getElementById("top5");
+
     if(window.scrollY > 50){
 
         header.classList.add("scrolled");
@@ -139,9 +158,67 @@ window.addEventListener("scroll", () => {
         header.classList.remove("scrolled");
 
     }
+    const rect1 = top1.getBoundingClientRect();
+    const rect2 = top2.getBoundingClientRect();
+    const rect3 = top3.getBoundingClientRect();
+    const rect4 = top4.getBoundingClientRect();
+    const rect5 = top5.getBoundingClientRect();
+    const center = window.innerHeight / 2;
+    if (rect1.top <= center && rect2.top>= center) {
+        he1.classList.add("Important");
+    }else{
+        he1.classList.remove("Important");
+    }
+    if (rect2.top <= center && rect3.top>= center) {
+        he2.classList.add("Important");
+    }else{
+        he2.classList.remove("Important");
+    }
+    if (rect3.top <= center && rect4.top>= center) {
+        he3.classList.add("Important");
+    }else{
+        he3.classList.remove("Important");
+    }
+    if (rect4.top <= center && rect5.top>= center) {
+        he4.classList.add("Important");
+    }else{
+        he4.classList.remove("Important");
+    }
+    if (rect5.top <= center) {
+        he5.classList.add("Important");
+    }else{
+        he5.classList.remove("Important");
+    }
+
+
 
 });
 
 
+let displayId = 0;
+
+async function Display() {
+    const myId = ++displayId;
+
+    const box = document.getElementById("student");
+    const text = i18next.t("student");
+
+    displaying = true;
+
+    for (let i = 0; i < text.length; i++) {
+        // Une nouvelle animation a démarré
+        if (myId !== displayId) {
+            return;
+        }
+
+        box.innerHTML = text.substring(0, i + 1);
+        await new Promise(resolve => setTimeout(resolve, 50));
+    }
+
+    // On ne met displaying à false que si on est encore l'animation active
+    if (myId === displayId) {
+        displaying = false;
+    }
+}
 // SLIDER
 
