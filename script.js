@@ -19,7 +19,6 @@ i18next
 
     backend: {
       loadPath: './locales/{{lng}}.json'
-      crossDomain: true
     }
   }, function(err, t) {
     // init set content
