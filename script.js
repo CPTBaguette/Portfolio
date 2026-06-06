@@ -1,7 +1,3 @@
-
-
-
-
 const modal = document.getElementById("modal");
 const title = document.getElementById("modal-title");
 const text = document.getElementById("modal-text");
@@ -220,5 +216,4 @@ async function Display() {
         displaying = false;
     }
 }
-// SLIDER
 
