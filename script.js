@@ -19,6 +19,7 @@ i18next
 
     backend: {
       loadPath: 'https://github.com/CPTBaguette/Portfolio/tree/main/locales'
+      crossDomain: true
     }
   }, function(err, t) {
     // init set content
