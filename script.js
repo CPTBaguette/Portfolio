@@ -18,7 +18,7 @@ i18next
     debug: true,
 
     backend: {
-      loadPath: '/Portfolio/locales/{{lng}}.json'
+      loadPath: 'https://github.com/CPTBaguette/Portfolio/tree/main/locales'
     }
   }, function(err, t) {
     // init set content
