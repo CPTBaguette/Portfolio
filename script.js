@@ -18,7 +18,7 @@ i18next
     debug: true,
 
     backend: {
-      loadPath: '/locales/{{lng}}.json'
+      loadPath: '/Portfolio/locales/{{lng}}.json'
     }
   }, function(err, t) {
     // init set content
