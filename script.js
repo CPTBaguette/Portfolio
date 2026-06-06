@@ -18,7 +18,7 @@ i18next
     debug: true,
 
     backend: {
-      loadPath: 'https://github.com/CPTBaguette/Portfolio/tree/main/locales'
+      loadPath: 'https://cptbaguette.github.io/Portfolio/tree/main/locales'
       crossDomain: true
     }
   }, function(err, t) {
