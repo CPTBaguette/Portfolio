@@ -64,7 +64,7 @@ function updateContent() {
         openModal(
             i18next.t('Card2T'),
             i18next.t('Card2Tex'),
-            'Andy.jpg', null
+            'view.jpg', null
         );
     };
     document.getElementById('Card3').onclick = () => {
