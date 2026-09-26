@@ -235,8 +235,8 @@ html{
 
 .deb .ImgMain{
     margin:auto;
-    width: 25%;
-    height: 25%;
+    width: clamp(15rem, 10vw, 15rem);
+    height: clamp(15rem, 10vh, 15rem);
     clip-path: circle(50%);
     border: 3px solid rgb(0, 0, 0);
     
@@ -843,10 +843,7 @@ animation: play 7s steps(7) infinite;
         width:80%;
     }
 
-    .deb .ImgMain{
-        width:200px;
-        height:200px;
-    }
+    
 
     .mesComp ul{
         flex-wrap:wrap;
@@ -911,10 +908,7 @@ animation: play 7s steps(7) infinite;
         width:100%;
     }
 
-    .deb .ImgMain{
-        width:180px;
-        height:180px;
-    }
+  
 
     .deb div h1{
         font-size:2rem;
@@ -1055,10 +1049,7 @@ animation: play 7s steps(7) infinite;
         width: 75%;
     }
 
-    .deb .ImgMain{
-        width:140px;
-        height:140px;
-    }
+    
 
     .deb div h1{
         font-size:1.6rem;

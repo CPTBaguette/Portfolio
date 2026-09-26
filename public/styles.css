@@ -719,8 +719,8 @@ html {
 }
 .deb .ImgMain {
   margin: auto;
-  width: 25%;
-  height: 25%;
+  width: clamp(15rem, 10vw, 15rem);
+    height: clamp(15rem, 10vh, 15rem);
   clip-path: circle(50%);
   border: 3px solid rgb(0, 0, 0);
   border-radius: 50%;
@@ -1191,10 +1191,7 @@ h2,h3 {
   .deb .divTop, .social_wrapper {
     width: 80%;
   }
-  .deb .ImgMain {
-    width: 200px;
-    height: 200px;
-  }
+ 
   .mesComp ul {
     flex-wrap: wrap;
     justify-content: center;
@@ -1239,10 +1236,7 @@ h2,h3 {
   .deb {
     width: 100%;
   }
-  .deb .ImgMain {
-    width: 180px;
-    height: 180px;
-  }
+
   .deb div h1 {
     font-size: 2rem;
     text-shadow: -1px 1px black, -2px 2px black, -3px 3px black;
@@ -1333,10 +1327,7 @@ h2,h3 {
   #test, #comp, #Portfolio, #Contact {
     width: 75%;
   }
-  .deb .ImgMain {
-    width: 140px;
-    height: 140px;
-  }
+
   .deb div h1 {
     font-size: 1.6rem;
   }
